@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ejercicios OR</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<link rel="stylesheet" href="./css/operator.css">
+	
+</head>
+<body>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+ <script src="./js/respuestas.js"></script>	
+<header>
+	Organización de Computadoras	
+</header>
+<nav>
+	<a href="index.html">Explicación Mascaras</a>
+	<a href="ejerciciosand.html">Ejercicios AND</a>
+	<a href="ejerciciosor.html">Ejercicios OR</a>
+	<a href="">Ejercicios XOR</a>
+</nav>
+<main>
+	<h1>Ejercicios de Mascaras OR</h1>
+<div class="row">
+	<div class="containerOperator">
+		<div class="operator">
+			<input id="operator1" type="text" size="16" value="0001011110001010" readonly>
+			<input id="operator2" type="text" size="16"  value="1000101111001101" readonly>
+			<input id="result1" type="text" size="16" pattern="[0-1]{16}">
+		</div>
+		<div class="containerFeed">
+		<div id="msjError1" class="alert alert-danger" role="alert" style="display: none;">El Ejercicio No esta Bien Resuelto <a href="#" class="alert-link">Vea la Solución</a></div>'
+		<div id="msjOk1" class="alert alert-success" style="display: none;">El Ejercicio esta Bien Resuelto!</div>
+	   </div>
+	</div>
+	<div class="containerOperator">
+		<div class="operator">
+			<input id="operator3" type="text" size="16" value="1111100110001010" readonly>
+			<input id="operator4" type="text" size="16"  value="0001011100001111" readonly>
+			<input id="result2" type="text" size="16" pattern="[0-1]{16}">
+		</div>
+		<div class="containerFeed">
+		<div id="msjError2" class="alert alert-danger" role="alert" style="display: none;">El Ejercicio No esta Bien Resuelto <a href="#" class="alert-link">Vea la Solución</a></div>'
+		<div id="msjOk2" class="alert alert-success" style="display: none;">El Ejercicio esta Bien Resuelto!</div>
+	    </div>
+	</div>
+</div>	
+<div class="row">
+	<div class="containerOperator">
+		<div class="operator">
+		    <input id="operator5" type="text" size="16" value="0000100001101010" readonly>
+			<input id="operator6" type="text" size="16"  value="1101010000110101" readonly>
+			<input id="result3" type="text" size="16" pattern="[0-1]{16}">
+		</div>
+		<div class="containerFeed">
+	    <div id="msjError3" class="alert alert-danger" role="alert" style="display: none;">El Ejercicio No esta Bien Resuelto <a href="#" class="alert-link">Vea la Solución</a></div>'
+		<div id="msjOk3" class="alert alert-success" style="display: none;">El Ejercicio esta Bien Resuelto!</div>
+	    </div>
+	</div>
+	<div class="containerOperator">
+		<div class="operator">
+			<input id="operator7" type="text" size="16" value="1110111101111100" readonly>
+			<input id="operator8" type="text" size="16"  value="0001000010000011" readonly>
+			<input id="result4" type="text" size="16" pattern="[0-1]{16}">
+		</div>
+	     <div class="containerFeed">
+		    <div id="msjError4" class="alert alert-danger" role="alert" style="display: none;">El Ejercicio No esta Bien Resuelto <a href="#" class="alert-link">Vea la Solución</a></div>'
+		    <div id="msjOk4" class="alert alert-success" style="display: none;">El Ejercicio esta Bien Resuelto!</div>
+	     </div>
+	</div>
+</div>
+ <button type="button" class="btn btn-light" onclick="corregirAllOr()">Corregir</button>	
+ 	
+</main>
+<footer>
+	
+</footer>
+	
+</body>
+</html>
