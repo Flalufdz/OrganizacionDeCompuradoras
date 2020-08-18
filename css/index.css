@@ -4,23 +4,24 @@
 body{
 	width: 100%;
 	height: 100%;
+	padding-right: 10%;
+	padding-left: 10%;
 }
 
 main{
 	width: 100%;
-	height: 90%;
+	height: 60%;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	padding: 10%;
-	padding-top: 5%;
+
 	font-family: 'Roboto', sans-serif;
 	color: #424242;
 }
 
 nav{
 	display: flex;
-	width: 60%;
+	width: 80%;
 	justify-content: space-between;
 	padding-left: 10%;
 	flex-direction: row;
@@ -31,7 +32,7 @@ nav{
 a{
 	text-decoration: none;
 	border-left: solid #999 0.2px;
-	width: 30%;
+	width: 20%;
 	padding-left: 2%;
 	padding-right: 1%;
 }
@@ -39,4 +40,27 @@ a{
 a, a:hover, a:visited{
 	color: #424242;
 }
+#containerMenu{
+	width: 100%;
+	display: flex;
+	flex-direction: row-reverse;
+	padding: 3%;
+
+}
+header{
+	width: 100%;
+	height: 30%;
+	display: flex;
+	align-items: center;
+	padding: 2%;
+}
+#titulo{
+	color: #424242;
+	padding-left:10% ;
+	font-family: 'Roboto', sans-serif;
+
+
+}
+
+
 

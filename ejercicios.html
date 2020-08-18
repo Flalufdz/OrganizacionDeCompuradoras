@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ejercicios Or</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<link rel="stylesheet" href="./css/operator.css">
+	<link rel="stylesheet" href="./css/index.css">
+</head>
+<body onload="generarRandom()">
+<header>
+	Organización de Computadoras	
+</header>
+<div id="containerMenu">
+	<nav>
+		<a href="index.html">Explicación Mascaras</a>
+		<a id="ejerciciosand" href="ejercicios.html">Ejercicios AND</a>
+		<a href="ejercicios.html">Ejercicios OR</a>
+		<a href="">Ejercicios XOR</a>
+	</nav>
+	</div>
+	<hr>
+<main>
+	<h1 id="titulo"></h1>
+
+<form>
+<div class="row">
+	<div class="containerOperator form-group col-md-3">
+		<div class="operator">
+			<input class="form-control" id="operator1" type="text" size="16" value="" readonly>
+			<input class="form-control" id="operator2" type="text" size="16"  value="" readonly>
+			<input id="result1" class="form-control " type="text" size="16" pattern="[0-1]{16}">
+		</div>
+	</div>
+	<div class="containerOperator form-group col-md-3">
+		<div class="operator">
+			<input class="form-control" id="operator3" type="text" size="16" value="" readonly>
+			<input class="form-control" id="operator4" type="text" size="16"  value="" readonly>
+			<input id="result2" class="form-control" type="text" size="16" pattern="[0-1]{16}">
+		</div>
+	</div>
+	<div class="containerOperator form-group col-md-3">
+		<div class="operator">
+			<input class="form-control" id="operator5" type="text" size="16" value="" readonly>
+			<input class="form-control" id="operator6" type="text" size="16"  value="" readonly>
+			<input id="result3" class="form-control" type="text" size="16" pattern="[0-1]{16}">
+		</div>
+	</div>		
+</div>	
+<div class="row">
+	<div class="containerOperator form-group col-md-3">
+		<div class="operator">
+		    <input class="form-control" id="operator7" type="text" size="16" value="" readonly>
+			<input class="form-control" id="operator8" type="text" size="16"  value="" readonly>
+			<input id="result4" class="form-control"type="text" size="16" pattern="[0-1]{16}">
+		</div>
+	</div>
+	<div class="containerOperator form-group col-md-3">
+		<div class="operator">
+			<input class="form-control" id="operator9" type="text" size="16" value="" readonly>
+			<input class="form-control" id="operator10" type="text" size="16"  value="" readonly>
+			<input id="result5" class="form-control"type="text" size="16" pattern="[0-1]{16}">
+		</div>
+	</div>
+	<div class="containerOperator form-group col-md-3">
+		<div class="operator">
+			<input class="form-control" id="operator11" type="text" size="16" value="" readonly>
+			<input class="form-control" id="operator12" type="text" size="16"  value="" readonly>
+			<input id="result6" class="form-control"type="text" size="16" pattern="[0-1]{16}">
+		</div>
+	</div>
+</div>
+<script src="./js/respuestas.js"></script>	
+ <button type="button" class="btn btn-light" onclick="corregirAllOr()" >Corregir</button>	
+</form>	
+</main>
+<footer>
+	
+</footer>
+	
+</body>
+</html>

@@ -73,3 +73,9 @@ function corregirAllAnd(){
     window.history.replaceState(null, null, window.location.href);
   }
 }
+
+function loadand(){
+  document.getElementById('titulo').innerText="Ejercicios AND"
+}
+
+document.getElementById('ejerciciosand').onload="loadand()";
