@@ -6,18 +6,10 @@ function generarRandom(){
                   "0100001111101000","1100000010000000","1010100010000000","1000000000001000", "0000000001000001",
                     "0100001001011100","0000000000000001"];
 
- document.getElementById('operator1').value=binarios[generarNro()];
- document.getElementById('operator2').value=binarios[generarNro()];
- document.getElementById('operator3').value=binarios[generarNro()];
- document.getElementById('operator4').value=binarios[generarNro()]; 
- document.getElementById('operator5').value=binarios[generarNro()]; 
- document.getElementById('operator6').value=binarios[generarNro()]; 
- document.getElementById('operator7').value=binarios[generarNro()]; 
- document.getElementById('operator8').value=binarios[generarNro()]; 
- document.getElementById('operator9').value=binarios[generarNro()]; 
- document.getElementById('operator10').value=binarios[generarNro()]; 
- document.getElementById('operator11').value=binarios[generarNro()]; 
- document.getElementById('operator12').value=binarios[generarNro()]; 
+ let operators= document.querySelectorAll('.operatorCalc')
+ operators.forEach(function(element){
+   element.value=binarios[generarNro()];
+ })                
 }
 
 function calcAnd(operando1, operando2){
@@ -30,7 +22,6 @@ function calcOr(operando1, operando2){
 
 
 function corregir(operator1,operator2,result, calc) {
-	alert("se ejecuto la funcion");
   var rtaOperacion=0;
   var operando1=0;
   var operando2=0;
@@ -93,3 +84,8 @@ results.forEach(function(element){
 }
 )
 
+document.querySelector('.btn').addEventListener('click',function(e){
+  e.preventDefault();
+  corregirAllOr()
+
+})
