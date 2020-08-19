@@ -79,3 +79,17 @@ function loadand(){
 }
 
 document.getElementById('ejerciciosand').onload="loadand()";
+
+
+let results=document.querySelectorAll('.result');
+results.forEach(function(element){
+   element.addEventListener('keypress', function(event){
+    var caracter = event.charCode || event.keyCode
+    if((caracter < 48 || caracter > 49) || event.target.value.length >15){
+      event.preventDefault();
+    }
+  }
+  )
+}
+)
+
